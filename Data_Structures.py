@@ -1,6 +1,6 @@
 #Python Basics for Data Science
 #IBM: PY0101EN
-#Module 2
+#Module 2: Python Data Structures
 
 #Topics: Tuples, Lists, Sets
 

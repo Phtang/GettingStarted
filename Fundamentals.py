@@ -1,8 +1,8 @@
 #Python Basics for Data Science
 #IBM: PY0101EN
-#Module 3
+#Module 3: Python Programming Fundamentals
 
-#Topics: Comparison Operators, Loops
+#Topics: Comparison Operators, Loops, Objects, Classes
 
 ################################################################################################################################################
 
@@ -115,18 +115,19 @@ print(Ratings)
 #init is a "constructor" and tells python you are creating a new class
 class Circle(object):
     def __init__(self,radius,colour): 
-        self.radius=radius;
-        self.colour=colour;
+        self.radius=radius
+        self.colour=colour
     #METHODS
     def add_radius(self,r):
         self.radius = self.radius+r
     
 
 class Rectangle(object):
+    #INITIALIZATION OF CLASS
     def __init__(self,height, width,colour): #init is a "constructor" and tells python you are creating a new class
-        self.radius=height;
-        self.radius=width;
-        self.colour=colour;
+        self.radius=height
+        self.radius=width
+        self.colour=colour
 
 #The "self" parameter is kind of a grouping of attributes
 #Call on classes below
@@ -137,16 +138,15 @@ C1.colour="orange" #Can change attributes on the fly
 
 #Calling the method
 C1.add_radius(15)
-#drawcircle
 
 # dir() function is useful for obtaining the list of data attributes and methods associated with a class
 
 #Lab
 class Car(object):
     def __init__(self,make,model,color):
-        self.make=make;
-        self.model=model;
-        self.color=color;
+        self.make=make
+        self.model=model
+        self.color=color
         self.owner_number=0 
     def car_info(self):
         print("make: ",self.make)
